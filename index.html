@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ritesh More | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="1.jpg" alt="Ritesh More" class="profile-image" onclick="openModal('1.jpg')">
+        <h1>Ritesh More</h1>
+    </div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#Qualifications">Qualifications</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <span class="hero-badge">Frontend Developer • UI/UX Learner</span>
+        <h2><span class="typewriter" data-text="Fresher | B.Sc. IT Student"></span></h2>
+        <p>Passionate IT student skilled in Python, HTML, CSS and Frontend Development.</p>
+        <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-secondary" href="#contact">Contact Me</a>
+        </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+        <div class="graphic-scene">
+            <img class="anime-gif" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="Anime-style character coding on a laptop">
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a passionate IT student from Mumbai with hands-on experience in frontend 
+        development and UI/UX design. I enjoy building responsive websites and innovative 
+        IoT projects. I am seeking opportunities to apply my technical skills in a 
+        growth-focused organization.
+    </p>
+</section>
+
+<section id="Qualifications">
+    <h2>Qualifications</h2>
+    <p>
+      <div class="card"><h3>SSC|2011-2021</h3> 
+          <p>   utkarsh mandir malad (E)</p>
+</div> 
+       <div class="card"> <h3>HSC|2021-2023 </h3>
+            <p>Patkar varde College goregoan(w)</p> 
+</div> 
+       <div class="card"> <h3>B.Sc.IT|2023-2026</h3>
+            <p>Chetana's college Bandra (E)</p>
+             </div> 
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="grid">
+        <div class="card">C & C++</div>
+        <div class="card">Python</div>
+        <div class="card">HTML</div>
+        <div class="card">CSS</div>
+        <div class="card">MS Office</div>
+        <div class="card">UI/UX Basics</div>
+        <div class="card">Leadership</div>
+        <div class="card">Communication</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+        <h3> LCD Display(IoT Project)</h3>
+        <p> LCD Display system using python programming. Presented at Vigyan Mela. </p>
+           <button class="view-btn" onclick="openModal('7.jpg')">
+            View Project
+        </button>
+    </div>
+
+    <div class="card">
+        <h3>Automatic car parking system (IoT Project)</h3>
+        <p>Arduino-based motor control system. Presented at Vigyan Mela. </p>
+           <button class="view-btn" onclick="openModal('8.jpg')">
+            View Project
+        </button>
+    </div>
+
+    <div class="card">
+        <h3>Smart Helmet (IoT Project)</h3>
+        <p>Arduino-based smart helmet with alcohol detection sensor and motor control system. Presented at Vigyan Mela 2.0.</p>
+           <button class="view-btn" onclick="openModal('6.AVIF')">
+            View Project
+        </button>
+    </div>
+
+    <div class="card">
+        <h3>Online Flower Shop Website</h3>
+        <p>Frontend website developed using HTML & CSS.</p>
+        <a class="view-btn" href="https://ritesh-1607.github.io/flower-web/" target="_blank" rel="noopener noreferrer">
+            View Project
+        </a>
+    </div>
+
+    <div class="card">
+        <h3>Hot Wheels Car Store</h3>
+        <p>E-commerce style frontend website connected with MongoDB compass.</p>
+          <a class="view-btn" href=" http://127.0.0.1:5173" target="_blank" rel="noopener noreferrer">
+            View Project
+        </a>
+    </div>
+
+    <div class="card">
+        <h3>Data Science</h3>
+        <p>Analysis Excel data with python programming and different Graphs for analyse data with easy way .</p>
+       <a class="view-btn" href="https://github.com/Ritesh-1607/Data-science" target="_blank" rel="noopener noreferrer">
+            View Project
+       </button>
+        </a>
+    </div>
+
+</section> 
+
+<section id="experience">
+    <h2>Experience</h2>
+
+    <div class="card">
+        <h3>Frontend Developer Intern</h3>
+        <p>Intern Intelligence | March 2025</p>
+    </div>
+
+    <div class="card">
+        <h3>UI/UX Design Intern</h3>
+        <p>Biswas Enterprises | Jan 2026</p>
+    </div>
+
+</section>
+
+<section id="certifications">
+    <h2>Certifications</h2>
+
+    <div class="card">
+        <h3>AI Analytics Specialist / Machine Learning Engineer</h3>
+        <p>LearnKonnect (L&T EduTech)</p>
+        <button class="view-btn" onclick="openModal('2.jpeg')">
+            View Certificate
+        </button>
+    </div>
+
+    <div class="card">
+        <h3>Android Application Developer</h3>
+        <p>LearnKonnect (L&T EduTech)</p>
+        <button class="view-btn" onclick="openModal('4.jpeg')">
+            View Certificate
+        </button>
+    </div>
+
+    <div class="card">
+        <h3>Vigyan Mela</h3>
+        <p>Innovation in software development (IoT)</p>
+        <button class="view-btn" onclick="openModal('5.jpeg')">
+            View Certificate
+        </button>
+    </div>
+
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: riteshmore1607@gmail.com</p></div>
+    <p>Phone: 8291379260</p>
+    <p>Location: Borivali (East), Mumbai</p>
+    <p>
+        <a href="https://www.linkedin.com/in/ritesh-more-8266a7358?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">LinkedIn Profile</a>
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Ritesh More | All Rights Reserved</p>
+</footer>
+
+<!-- Modal -->
+<div id="certificateModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
