@@ -18,11 +18,50 @@
 
 body {
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, var(--ink) 0%, #1d1926 48%, #28202d 100%);
+    background: var(--ink);
     color: var(--text);
     scroll-behavior: smooth;
     line-height: 1.6;
     overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: -18%;
+    z-index: 0;
+    pointer-events: none;
+    background:
+        radial-gradient(circle at 18% 22%, rgba(110, 231, 200, 0.22) 0 1px, transparent 2px),
+        radial-gradient(circle at 76% 18%, rgba(255, 209, 102, 0.8) 0 1px, transparent 2px),
+        radial-gradient(circle at 42% 78%, rgba(255, 122, 107, 0.65) 0 1px, transparent 2px),
+        radial-gradient(circle at 88% 72%, rgba(247, 243, 237, 0.8) 0 1px, transparent 2px),
+        radial-gradient(ellipse at 50% 48%, rgba(110, 231, 200, 0.16), transparent 30%),
+        radial-gradient(ellipse at 50% 48%, rgba(233, 87, 90, 0.12), transparent 54%),
+        linear-gradient(135deg, #090b1d 0%, #17152d 45%, #24182d 100%);
+    background-size: 170px 170px, 230px 230px, 290px 290px, 360px 360px, auto, auto, auto;
+    animation: backgroundZoom 18s ease-in-out infinite alternate;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: -10%;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.7;
+    background:
+        radial-gradient(circle at 50% 50%, #fff3b0 0 2.2%, #ff9f43 2.8%, rgba(255, 122, 107, 0.15) 5%, transparent 7%),
+        radial-gradient(circle at 50% 23%, #6ee7c8 0 0.9%, rgba(110, 231, 200, 0.24) 1.4%, transparent 2.2%),
+        radial-gradient(circle at 77% 50%, #ffd166 0 1.1%, rgba(255, 209, 102, 0.18) 1.7%, transparent 2.5%),
+        radial-gradient(circle at 50% 78%, #ff7a6b 0 1.3%, rgba(255, 122, 107, 0.18) 1.9%, transparent 2.8%),
+        radial-gradient(ellipse at center, transparent 0 22%, rgba(110, 231, 200, 0.32) 22.1% 22.35%, transparent 22.5% 38%, rgba(255, 209, 102, 0.22) 38.1% 38.35%, transparent 38.5% 55%, rgba(255, 122, 107, 0.2) 55.1% 55.35%, transparent 55.5%);
+    animation: solarSystemDrift 32s linear infinite;
+}
+
+body > * {
+    position: relative;
+    z-index: 1;
 }
 
 html {
@@ -397,6 +436,16 @@ nav a:hover {
 @keyframes badgeFloat {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-3px); }
+}
+
+@keyframes backgroundZoom {
+    from { transform: scale(1); }
+    to { transform: scale(1.3); }
+}
+
+@keyframes solarSystemDrift {
+    from { transform: rotate(0deg) scale(1); }
+    to { transform: rotate(360deg) scale(1.08); }
 }
 
 section {
